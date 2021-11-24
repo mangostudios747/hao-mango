@@ -1,10 +1,10 @@
 var pinyin = require("pinyin");
 
 export const state = ()=>({
-    currentTest:false, // ID of the currently ongoing test
+    currentTest: false, // ID of the currently ongoing test
     testData: false, // object containing name + vocab
     currentProblem: false, // current problem { question, answer, type }
-    testProgress:false // current test's progress by flashcard - { stage, progress { [c-e][c-e] } }
+    testProgress: false // current test's progress by flashcard - { stage, progress { [c-e][c-e] } }
 })
 
 export const mutations = {
