@@ -1,14 +1,13 @@
 <template>
   <div class="flex flex-col">
   <div class="flex flex-row justify-center flex-wrap">
-    <div :key="char+$store.state.currentProblem.type" v-for="(char, idx) of data" class="mx-1" >
+    <div :key="char+$store.state.currentProblem.oti" v-for="(char, idx) of data" class="mx-1" >
       <progress-bar :value="input[idx].percentDone" />
-      <div :id="char+'-target'">
-
+      <div class="char-container" :id="char+'-target'">
       </div>
     </div>
   </div>
-    <next-button @click="$store.dispatch('nextProblem');" v-if="done" />
+    <next-button class="ml-auto float-right" @click="$store.dispatch('nextProblem');" v-if="done" />
   </div>
 </template>
 
@@ -46,21 +45,17 @@ export default {
       this.correct = d;
       return d;
     },
-    type(){
-      return this.$store.state.currentProblem.type
+    datums(){
+      return { oti:this.$store.state.currentProblem.oti, data: this.data }
     }
   },
   watch:{
-    data:{
+    datums:{
       deep: true,
       handler(){
         this.resetInput();
         this.$nextTick(this.createBox)
       }
-    },
-    type(){
-      this.resetInput();
-      this.$nextTick(this.createBox)
     },
     input: {
       deep: true,
@@ -93,6 +88,7 @@ export default {
           padding: 5,
           showHintAfterMisses: 2,
           showCharacter: false,
+          outlineColor: '#D0D4D9',
           leniency: 1.5,
           strokeHighlightSpeed: 1,
           highlightColor: '#10B981'
@@ -117,6 +113,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style >
+.char-container svg {
+  filter: drop-shadow(-1px -1px 2px rgb(182, 185, 190));
+}
+
 
 </style>

@@ -16,6 +16,7 @@
     "nodejieba": "^2.5.2",
     "nuxt": "^2.15.3",
     "pinyin": "^2.10.2",
+    "vue-confetti": "^2.2.2",
     "vue-feather-icons": "^5.1.0"
   },
   "devDependencies": {

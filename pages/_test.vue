@@ -1,7 +1,11 @@
 <template>
   <div>
-    <div v-if="$store.state.currentTest">
-      <h1  class="font-bold text-black leading-4 text-2xl">{{$store.state.testData.name}}</h1>
+    <h1  class="font-bold text-black leading-4 text-2xl mb-2">{{$store.state.testData.name}}</h1>
+    <div class="flex w-full h-full" v-if="$store.getters.currentTestOver">
+      <happy/>
+    </div>
+    <div v-else-if="$store.state.currentTest">
+
       <problem :problem="$store.state.currentProblem"/>
     </div>
     <div class="flex " v-else>

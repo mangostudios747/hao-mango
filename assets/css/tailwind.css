@@ -4,10 +4,10 @@
 
 @variants responsive {
     .w-144 {
-        width: 28rem;
+        width: 36rem;
       }
-      
+
       .-mr-144 {
-        margin-right: -28rem;
+        margin-right: -36rem;
       }
 }

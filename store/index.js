@@ -58,7 +58,11 @@ export const actions = {
             commit('switchTest', {testID, test})
             dispatch('nextProblem')
     },
-    nextProblem({state, commit}){
+    nextProblem({state, commit, getters}){
+        if (getters.currentTestOver){
+          state.currentProblem = false;
+          return;
+        }
         let foundCard = false;
         let flashcardID;
         while (!foundCard){
@@ -117,9 +121,27 @@ export const actions = {
                 if (!defs.includes(flashcard.definition)) defs[pickIndex()] = flashcard.definition;
                 problem.answer.data = {options: defs, answer: flashcard.definition};
         }
+        problem.oti = Date.now();
 
         commit('setCurrentProblem', problem)
     },
+}
+
+export const getters = {
+  currentTestOver: (state, getters) => {
+    return getters.currentTestProgress === 1;
+  },
+  currentTestProgress: (state) => {
+    if (!state.testData) return 0;
+    const max = Object.keys(state.testData.words).length;
+    let c = 0;
+    for (const w of Object.keys(state.testData.words)){
+      if (state.testProgress[w].stage === 4){
+        c++;
+      }
+    }
+    return c/max
+  }
 }
 
 function pickIndex(){
