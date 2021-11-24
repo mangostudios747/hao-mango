@@ -1,13 +1,27 @@
 <template>
-  <div class="py-4 px-6 rounded-lg shadow bg-gray-100 my-6">
+  <div :class="correct?'bg-green-100':(wrong?'bg-red-100':'bg-gray-100')" class="py-4 px-6 rounded-lg shadow my-6">
       <question class="mb-3" :q="problem.question" />
-      <answer-input :a="problem.answer" />
+      <answer-input @wrong="wrong = true;" @correct="correct = true;" :a="problem.answer" />
   </div>
 </template>
 
 <script>
 import Question from './Question.vue'
 export default {
+  data: ()=>({
+    correct: false,
+    wrong: false
+  }),
+  computed:{
+    cp(){
+      return this.$store.state.currentProblem.oti;
+    }
+  },
+  watch:{
+    cp(){
+      this.correct = false; this.wrong = false;
+    }
+  },
   components: { Question },
     props:['problem']
 }

@@ -43,6 +43,10 @@ export default {
       }
 
       this.correct = d;
+      if (d){
+        this.$emit('correct');
+      }
+
       return d;
     },
     datums(){

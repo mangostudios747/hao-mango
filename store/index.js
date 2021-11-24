@@ -136,7 +136,7 @@ export const getters = {
     const max = Object.keys(state.testData.words).length;
     let c = 0;
     for (const w of Object.keys(state.testData.words)){
-      if (state.testProgress[w].stage === 4){
+      if (state.testProgress[w] && state.testProgress[w].stage === 4){
         c++;
       }
     }
