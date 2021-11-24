@@ -97,6 +97,7 @@ export default {
           drawingFadeDuration:500,
           outlineColor: '#D0D4D9',
           leniency: 1.5,
+          //strokeColor:'#013624',
           strokeHighlightSpeed: 1,
           highlightColor: '#10B981'
         }));
