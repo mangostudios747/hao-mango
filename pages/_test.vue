@@ -4,8 +4,8 @@
       <h1  class="font-bold text-black leading-4 text-2xl">{{$store.state.testData.name}}</h1>
       <problem :problem="$store.state.currentProblem"/>
     </div>
-    <div v-else>
-      {{ chap }}
+    <div class="flex " v-else>
+      <div class="my-auto mx-auto"></div>
     </div>
   </div>
 </template>

@@ -9,6 +9,11 @@ export default {
     base: '/hao-mango/'
   },
 
+  server: {
+    host: '0', // default: localhost
+    port: '3000'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'chinese-vocab',

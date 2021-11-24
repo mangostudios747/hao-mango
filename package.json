@@ -12,6 +12,7 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.9.1",
+    "hanzi-writer": "^3.3.0",
     "nodejieba": "^2.5.2",
     "nuxt": "^2.15.3",
     "pinyin": "^2.10.2",
