@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{268:function(t,n,e){"use strict";e.r(n);var l={components:{},props:["q"]},c=e(37),component=Object(c.a)(l,(function(){var t=this,n=t.$createElement,e=t._self._c||n;return e("div",[e("p",{staticClass:"text-lg"},[t._v("Translate "+t._s(t.q.data))])])}),[],!1,null,null,null);n.default=component.exports}}]);
