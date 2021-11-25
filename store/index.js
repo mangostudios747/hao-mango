@@ -145,7 +145,7 @@ export const getters = {
 }
 
 function pickIndex(){
-    return getRandom([1,2,3,4], 1)
+    return getRandom([0,1,2,3], 1)
 }
 
 const problemTypes = {
