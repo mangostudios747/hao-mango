@@ -19,7 +19,7 @@ export default {
           style: pinyin.STYLE_TONE2
         }).map(e=>({
           letters: e[0].slice(0, e[0].length - 1),
-          pinyin: e[0].slice(e[0].length-1)
+          tone: e[0].slice(e[0].length-1)
         }));
         this.$emit('update:value', this.value)
       }

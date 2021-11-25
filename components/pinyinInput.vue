@@ -77,6 +77,7 @@ export default {
 
         this.$emit('correct');
       } else {
+        console.log(ansJSON, keyJSON)
         this.rightOnFirstTry = false;
         this.wrong = true;
         this.$emit('wrong');
