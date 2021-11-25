@@ -1,5 +1,5 @@
 <template>
-  <button
+  <a
     v-on:click="$emit('click', $event)"
     class="
           float-right
@@ -16,7 +16,7 @@
         "
   >
     <slot/>
-  </button>
+  </a>
 </template>
 
 <script>

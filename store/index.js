@@ -1,4 +1,4 @@
-var pinyin = require("pinyin");
+const pinyin = require("pinyin");
 
 export const state = ()=>({
     currentTest: false, // ID of the currently ongoing test
