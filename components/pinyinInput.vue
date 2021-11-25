@@ -3,16 +3,16 @@
     <div class="flex flex-col">
       <div :key="idx" v-for="(c, idx) of data" class="flex mx-auto flex-col">
         <div class="grid grid-cols-4 mx-0 rounded-md">
-          <div @click="input[idx].tone=1" :class="input[idx].tone===1?'active':''" class="tone-select-box ">
+          <div @click="input[idx].tone='1'" :class="input[idx].tone==1?'active':''" class="tone-select-box ">
             <tone-one/>
           </div>
-          <div @click="input[idx].tone=2" :class="input[idx].tone===2?'active':''" class="tone-select-box">
+          <div @click="input[idx].tone='2'" :class="input[idx].tone==2?'active':''" class="tone-select-box">
             <tone-two/>
           </div>
-          <div @click="input[idx].tone=3" :class="input[idx].tone===3?'active':''" class="tone-select-box">
+          <div @click="input[idx].tone='3'" :class="input[idx].tone==3?'active':''" class="tone-select-box">
             <tone-three/>
           </div>
-          <div @click="input[idx].tone=4" :class="input[idx].tone===4?'active':''" class="tone-select-box">
+          <div @click="input[idx].tone='4'" :class="input[idx].tone==4?'active':''" class="tone-select-box">
             <tone-four/>
           </div>
         </div>

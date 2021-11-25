@@ -6,11 +6,11 @@
             "pinyin":[
                 {
                     "letters":"ni",
-                    "tone":3
+                    "tone":"3"
                 },
                 {
                     "letters":"hao",
-                    "tone":3
+                    "tone":"3"
                 }
             ],
             "definition": "hello"
@@ -20,11 +20,11 @@
             "pinyin":[
                 {
                     "letters":"ping",
-                    "tone":2
+                    "tone":"2"
                 },
                 {
                     "letters":"guo",
-                    "tone":3
+                    "tone":"3"
                 }
             ],
             "definition": "apple"
@@ -34,7 +34,7 @@
             "pinyin":[
                 {
                     "letters":"e",
-                    "tone":2
+                    "tone":"2"
                 }
             ],
             "definition": "swan"
@@ -44,7 +44,7 @@
             "pinyin":[
                 {
                     "letters":"niao",
-                    "tone":3
+                    "tone":"3"
                 }
             ],
             "definition": "bird"
