@@ -6,6 +6,7 @@
           rounded-lg
           shadow-lg
           px-3
+          cursor-pointer
           text-base
           py-1
           my-2
