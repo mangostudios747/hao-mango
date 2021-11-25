@@ -48,7 +48,7 @@ export default {
 
 <style scoped>
 .word-box {
-  @apply my-3 bg-gray-100 rounded-lg p-5 shadow-md text-center hover:shadow-lg focus-within:shadow-2xl inline-flex;
+  @apply my-1 bg-gray-100 rounded-lg p-5 shadow-md text-center hover:shadow-lg focus-within:shadow-2xl inline-flex;
 }
 
 .word-box input {

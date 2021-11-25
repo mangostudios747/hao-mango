@@ -68,6 +68,6 @@ export default {
 
 <style scoped>
 .word-box {
-  @apply bg-gray-100 rounded-lg p-5 flex-col sm:flex-row flex-wrap shadow-md text-center hover:shadow-lg focus-within:shadow-2xl inline-flex;
+  @apply bg-gray-100 my-1 rounded-lg p-5 flex-col sm:flex-row flex-wrap shadow-md text-center hover:shadow-lg focus-within:shadow-2xl inline-flex;
 }
 </style>
