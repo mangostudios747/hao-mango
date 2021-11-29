@@ -2,7 +2,10 @@
   <div class="flex flex-col">
     <div class="flex flex-col">
       <div :key="idx" v-for="(c, idx) of data" class="flex mx-auto flex-col">
-        <div class="grid grid-cols-4 mx-0 rounded-md">
+        <div class="grid grid-cols-5 mx-0 rounded-md">
+          <div @click="input[idx].tone='0'" :class="input[idx].tone==0?'active':(wrong&&data[idx].tone==0?'hint':'')" class="tone-select-box ">
+            
+          </div>
           <div @click="input[idx].tone='1'" :class="input[idx].tone==1?'active':(wrong&&data[idx].tone==1?'hint':'')" class="tone-select-box ">
             <tone-one/>
           </div>
