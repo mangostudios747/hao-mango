@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col">
       <div  class="grid gap-4 grid-cols-2 sm:grid-cols-4">
-        <div @click="input = option" :class="input === option? 'bg-green-500 text-white':''" :key="idx" class="bg-white cursor-pointer hover:shadow-sm rounded-lg px-3 py-2 text-center font-semibold shadow-md" v-for="(option, idx) of data.options">{{option}}</div>
+        <div @click="input = option" :class="input === option? 'bg-green-500 text-white dark:text-white':''" :key="idx" class="bg-white dark:bg-gray-600 dark:text-gray-50 cursor-pointer hover:shadow-sm rounded-lg px-3 py-2 text-center font-semibold shadow-md" v-for="(option, idx) of data.options">{{option}}</div>
 
       </div>
       <div class="mt-4">
