@@ -1,6 +1,6 @@
 <template>
   <svg viewBox="0 0 100 100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-    <line x1="0" y1="100" x2="100" y2="0" stroke="black" />
+    <line x1="0" y1="100" x2="100" y2="0" class="stroke-current text-black dark:text-gray-50" />
 
     <!-- If you do not specify the stroke
          color the line will not be visible -->
