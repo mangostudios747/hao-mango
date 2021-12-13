@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1  class="font-bold text-black leading-4 text-2xl mb-2">{{$store.state.testData.name}}</h1>
+    <h1  class="font-bold text-black dark:text-gray-50 leading-4 text-2xl mb-2">{{$store.state.testData.name}}</h1>
     <div class="flex w-full h-full" v-if="$store.getters.currentTestOver">
       <happy/>
     </div>
