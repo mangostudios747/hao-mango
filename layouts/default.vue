@@ -1,5 +1,5 @@
 <template>
-<div class="flex flex-col pb-4 overflow-x-hidden h-screen w-screen dark:bg-gray-800 bg-gray-100">
+<div class="flex flex-col pb-4 overflow-x-hidden h-screen w-screen dark:bg-gray-700 bg-gray-100">
   <nav class="sticky flex top-0 px-8 w-full py-2 h-16 ">
     <button class="mr-3 sm:hidden" @click="sidebar=!sidebar">
       <menu-icon size="1.5x" class="custom-class"></menu-icon>
@@ -14,7 +14,7 @@
     </a>
 
    </nav>
-   <div  :class="sidebar?'translate-x-96 sm:translate-x-0':'translate-x-0'" class="py-6 sm:py-12 h-full w-full overflow-y-scroll mx-4  rounded-2xl shadow-inner duration-300 transition-transform bg-gray-200 dark:bg-gray-900 px-4 transform sm:px-16">
+   <div  :class="sidebar?'translate-x-96 sm:translate-x-0':'translate-x-0'" class="py-6 sm:py-12 h-full w-full overflow-y-scroll mx-4  rounded-2xl shadow-inner duration-300 transition-transform bg-gray-200 dark:bg-gray-800 px-4 transform sm:px-16">
       <Nuxt/>
    </div>
 
