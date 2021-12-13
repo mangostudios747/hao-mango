@@ -19,7 +19,7 @@
             <tone-four/>
           </div>
         </div>
-        <div class="rounded-md shadow-inner  bg-gray-200 dark:bg-gray-800 mt-3 mb-2 focus-within:bg-white dark:focus-within:bg-gray-600 focus-within:shadow-md w-full mx-auto">
+        <div class="rounded-md shadow-inner  bg-gray-200 dark:bg-gray-800 mt-3 mb-2 focus-within:bg-white dark:focus-within:bg-gray-600 dark:text-gray-50 focus-within:shadow-md w-full mx-auto">
           <input :placeholder="wrong?data[idx].letters:''" v-model="input[idx]['letters']" class="bg-transparent  focus:outline-none px-3 text-lg w-full" />
         </div>
       </div>
