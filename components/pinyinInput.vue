@@ -92,11 +92,11 @@ export default {
 
 <style>
 .tone-select-box {
-  @apply  h-8 w-auto py-1 justify-center cursor-pointer bg-white shadow flex text-center hover:shadow-lg;
+  @apply  h-8 w-auto py-1 justify-center cursor-pointer bg-white dark:bg-gray-600 shadow flex text-center hover:shadow-lg;
 }
 
 .tone-select-box.active {
-  @apply bg-gray-200 text-white shadow-inner
+  @apply bg-gray-200 dark:bg-gray-800 text-white shadow-inner
 }
 
 .tone-select-box:first-of-type {
