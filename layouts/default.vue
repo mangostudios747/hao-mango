@@ -2,7 +2,7 @@
 <div class="flex flex-col pb-4 overflow-x-hidden h-screen w-screen dark:bg-gray-700 bg-gray-100">
   <nav class="sticky flex top-0 px-8 w-full py-2 h-16 ">
     <button class="mr-3 sm:hidden" @click="sidebar=!sidebar">
-      <menu-icon size="1.5x" class="custom-class"></menu-icon>
+      <menu-icon size="1.5x" class="stroke-current dark:text-gray-50"></menu-icon>
     </button>
 <h1 class="text-green-500  my-auto  text-2xl font-bold tracking-wide">HaoMango</h1>
   </nav>
