@@ -1,6 +1,6 @@
 <template>
   <svg viewBox="0 0 100 100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-    <path d="M 0 20 L 50 80 L 100 20" fill="transparent" stroke="black" />
+    <path d="M 0 20 L 50 80 L 100 20" fill="transparent" class="stroke-current text-black dark:text-gray-50" />
 
     <!-- If you do not specify the stroke
          color the line will not be visible -->
