@@ -1,5 +1,5 @@
 <template>
-  <div :class="correct?'bg-green-100':(wrong?'bg-red-100':'bg-gray-100')" class="py-4 px-6 rounded-lg shadow my-6">
+  <div :class="correct?'bg-green-100 dark:bg-green-800':(wrong?'bg-red-100 dark:bg-red-800':'bg-gray-100 dark:bg-gray-700')" class="py-4 px-6 rounded-lg shadow my-6">
       <question class="mb-3" :q="problem.question" />
       <answer-input @wrong="wrong = true;" @correct="correct = true;" :a="problem.answer" />
   </div>
