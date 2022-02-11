@@ -5,10 +5,6 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  router: {
-    base: '/hao-mango/'
-  },
-
   server: {
     host: '0', // default: localhost
     port: '3000'
