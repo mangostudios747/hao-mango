@@ -4,10 +4,14 @@ export const state = ()=>({
     currentTest: false, // ID of the currently ongoing test
     testData: false, // object containing name + vocab
     currentProblem: false, // current problem { question, answer, type }
-    testProgress: false // current test's progress by flashcard - { stage, progress { [c-e][c-e] } }
+    testProgress: false, // current test's progress by flashcard - { stage, progress { [c-e][c-e] } }
+    skipToHandwriting: false,
 })
 
 export const mutations = {
+    setSkipToHandwriting(state, h){
+      state.skipToHandwriting = h
+    },
     switchTest(state, {testID, test}){
         // clear everything
         state.currentTest = false;
@@ -21,10 +25,10 @@ export const mutations = {
     },
     setDefaultProgress(state, flashcardID){
         state.testProgress[flashcardID] = {
-            stage: 1,
+            stage: 3,
             progress: {
-                pe:0, ec:0, cp: 0,
-                pc:0, ep:0, ce: 0
+                pe:!!state.skipToHandwriting, ec:0, cp: !!state.skipToHandwriting,
+                pc:0, ep:!!state.skipToHandwriting, ce: !!state.skipToHandwriting
             }
         }
     },
