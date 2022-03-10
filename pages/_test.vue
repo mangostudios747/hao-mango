@@ -5,7 +5,7 @@
       <happy/>
     </div>
     <div class="relative pt-3" v-else-if="$store.state.currentTest">
-      <button @click="$store.commit('skipToHandwriting', true)" class="bg-white absolute px-3 py-2 top-2 right-2 rounded-md>Skip to handwriting</button>
+      <button @click="$store.commit('skipToHandwriting', true)" class="bg-white absolute px-3 py-2 top-2 right-2 rounded-md">Skip to handwriting</button>
       <problem :problem="$store.state.currentProblem"/>
     </div>
     <div class="flex " v-else>
