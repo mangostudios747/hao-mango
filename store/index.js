@@ -25,7 +25,7 @@ export const mutations = {
     },
     setDefaultProgress(state, flashcardID){
         state.testProgress[flashcardID] = {
-            stage: 3,
+            stage: 1+2*(+state.skipToHandwriting),
             progress: {
                 pe:!!state.skipToHandwriting, ec:0, cp: !!state.skipToHandwriting,
                 pc:0, ep:!!state.skipToHandwriting, ce: !!state.skipToHandwriting
